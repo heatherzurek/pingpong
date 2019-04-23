@@ -24,5 +24,11 @@ namespace PingPongGame.Tests
         PingPong testPingPong = new PingPong();
         Assert.AreEqual("ping pong", testPingPong.IsPingPong(15));
       }
+      [TestMethod]
+      public void IsPingPong_WillOutputAList_True()
+      {
+        PingPong testPingPong = new PingPong();
+        Assert.AreEqual("ping pong",  testPingPong.PingPongList(15)[14]);
+      }
     }
 }
