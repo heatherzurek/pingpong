@@ -10,19 +10,16 @@ namespace PingPongGame
       List<string> numberList = new List<string>();
       for (int i = 1; i <= number; i++)
       {
-        if(number % 3 == 0 && number % 5 == 0)
+        if(i % 3 == 0 && i % 5 == 0)
         {
-          Console.WriteLine("pingpong");
           numberList.Add("ping pong");
         }
-        else if(number % 3 == 0)
+        else if(i % 3 == 0)
         {
-          Console.WriteLine("pingpingpingping");
           numberList.Add("ping");
         }
-        else if (number % 5 == 0)
+        else if (i % 5 == 0)
         {
-          Console.WriteLine("hello");
           numberList.Add("pong");
         }
         else
